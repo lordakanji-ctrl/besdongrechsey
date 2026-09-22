@@ -1,167 +1,144 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You ❤️</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #801c35;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        .envelope {
-            position: relative;
-            width: 300px;
-            height: 200px;
-            background: #ff6b81;
-            cursor: pointer;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-        }
-
-        .envelope:hover {
-            transform: scale(1.05);
-        }
-
-        /* Envelope flap */
-        .flap {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-left: 150px solid transparent;
-            border-right: 150px solid transparent;
-            border-top: 110px solid #ff8fa3;
-            transform-origin: top;
-            transition: transform 0.8s;
-            z-index: 3;
-        }
-
-        /* Envelope sides */
-        .envelope::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            border-left: 150px solid #ff526b;
-            border-top: 100px solid transparent;
-            z-index: 2;
-        }
-
-        .envelope::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            border-right: 150px solid #ff526b;
-            border-top: 100px solid transparent;
-            z-index: 2;
-        }
-
-        .heart {
-            position: absolute;
-            top: 75px;
-            left: 125px;
-            font-size: 50px;
-            z-index: 4;
-            transition: opacity 0.4s;
-        }
-
-        .letter {
-            position: absolute;
-            width: 270px;
-            height: 180px;
-            background: white;
-            left: 15px;
-            top: 10px;
-            padding: 25px;
-            border-radius: 5px;
-            z-index: 1;
-            transition: transform 1s;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-        }
-
-        .letter h1 {
-            color: #ff4f70;
-            font-size: 32px;
-            margin-top: 25px;
-        }
-
-        .letter p {
-            color: #555;
-            font-size: 16px;
-        }
-
-        .opened .flap {
-            transform: rotateX(180deg);
-            z-index: 0;
-        }
-
-        .opened .letter {
-            transform: translateY(-170px);
-            z-index: 5;
-        }
-
-        .opened .heart {
-            opacity: 0;
-        }
-
-        .hint {
-            margin-top: 30px;
-            color: #ff4f70;
-            font-size: 18px;
-        }
-    </style>
+    <title>Mom Naroth - CV</title>
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- NAME -->
+    <h1>Mom Naroth</h1>
+    <hr>
 
-        <div class="envelope" onclick="openEnvelope()">
+    <!-- TITLE -->
+    <h2>
+        <font color="green">
+            Information Technology Student
+        </font>
+    </h2>
 
-            <div class="flap"></div>
+    <!-- CONTACT AND PHOTO -->
+    <table width="100%">
+        <tr>
+            <td>
+                <p>Phnom Penh, Cambodia</p>
+                <p>Email: lordakanji@gmail.com</p>
+                <p>Phone: 096 3106016</p>
+            </td>
 
-            <div class="letter">
-                <h1>I Love You ❤️</h1>
-                <p>
-                    You are so special to me.<br>
-                    Thank you for being in my life. 💕
-                </p>
-            </div>
+            <td align="right">
+                <img
+                    src="moew.jpg"
+                    alt="Profile Photo"
+                    width="150"
+                >
+            </td>
+        </tr>
+    </table>
 
-            <div class="heart">❤️</div>
+    <!-- SKILLS -->
+    <h2>
+        <font color="green">
+            Skills
+        </font>
+    </h2>
 
-        </div>
+    <p>
+        HTML, JavaScript, C#, Java,
+        Python, SQL and Git/GitHub
+    </p>
 
-        <div class="hint">💌 Click the envelope</div>
+    <!-- EDUCATION -->
+    <h2>
+        <font color="green">
+            Education
+        </font>
+    </h2>
 
-    </div>
+    <h3>
+        <font color="blue">
+            Information Technology
+        </font>
+    </h3>
 
-    <script>
-        function openEnvelope() {
-            document.querySelector(".envelope").classList.toggle("opened");
-        }
-    </script>
+    <p>Year 3 Undergraduate Student</p>
+
+    <p>
+        Currently studying programming, web development,
+        computer networks and information systems.
+    </p>
+
+    <!-- PROJECT -->
+    <h2>
+        <font color="green">
+            Projects
+        </font>
+    </h2>
+
+    <h3>
+        <font color="blue">
+            Diecast Collection Management Website
+        </font>
+    </h3>
+
+    <p>HTML and JavaScript</p>
+
+    <ul>
+        <li>
+            Created a website to manage a personal diecast collection.
+        </li>
+        <li>
+            Organized diecast cars by name, brand, model and status.
+        </li>
+        <li>
+            Added sections for owned, pre-order and incoming models.
+        </li>
+    </ul>
+
+    <!-- EXPERIENCE -->
+    <h2>
+        <font color="green">
+            Experience
+        </font>
+    </h2>
+
+    <h3>
+        <font color="blue">
+            Private English Tutor
+        </font>
+    </h3>
+
+    <p>Phnom Penh, Cambodia</p>
+
+    <ul>
+        <li>
+            Provided private English lessons.
+        </li>
+        <li>
+            Prepared simple lessons based on student ability.
+        </li>
+        <li>
+            Helped students practice English communication.
+        </li>
+    </ul>
+
+    <p>
+        <b>Skills:</b>
+        Communication, Teaching and Presentation
+    </p>
+
+    <!-- FOOTER -->
+    <hr>
+
+    <p>
+        Copyright &copy; 2026 Mom Naroth.
+        All rights reserved.
+    </p>
 
 </body>
+
 </html>
 
